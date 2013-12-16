@@ -1,0 +1,166 @@
+div#container1{
+	padding:7px;
+	border-style:solid;
+	border-width:1px;
+	border-color:white;
+	width:412px;
+	height:456px;
+	position:relative;
+	float:left;
+	margin-right:10px;
+	margin-bottom:15px;
+}
+div#sticker{
+	position:relative;
+	width:400px;
+	height:260px;
+	margin-left:auto;
+	margin-right:auto;
+	padding-top:20%;
+}
+div#hellomynameis{
+	height:82px;
+	font-family:'Cherry Cream Soda';
+	text-align:center;
+	color:white;
+	background-color:#de4e2a;
+	border-radius:25px 25px 0px 0px;
+}
+div#namegoeshere{
+	position:relative;
+	height:175px;
+	margin-left:auto;
+	margin-right:auto;
+	font-family:'Permanent Marker';
+	font-size:108px;
+	text-align:center;
+	color:#1e9ddc;
+	border-style:solid;
+	border-width:3px;
+	border-color:#de4e2a;
+	border-radius:0px 0px 25px 25px;
+	background-color:white;
+}
+div#Beau{
+	position:relative;
+	width:70%;
+	margin-left:auto;
+	margin-right:auto;
+}
+.container{
+	padding:7px;
+	border-style:solid;
+	border-width:1px;
+	width:412px;
+	height:456px;
+	position:relative;
+	float:left;
+	margin-right:10px;
+	margin-bottom:15px;
+	background-color:white;
+}
+.evencontainer{
+		border-color:#1e9ddc;
+}
+.oddcontainer{
+		border-color:#de4e2a;
+}
+div#blogcontainer{
+	width:850px;
+}
+.content{
+	padding:5px;
+	border-style:solid;
+	border-width:1px;
+	width:400px;
+	height:400px;
+	position:relative;
+	margin-left:auto;
+	margin-right:auto;
+	overflow:scroll;
+}
+.evencontent{
+	border-color:#de4e2a;
+}
+.oddcontent{
+	border-color:#1e9ddc;
+}
+div#thablog{
+	width:838px;
+}
+.pic{
+	display:block;
+	margin-left:auto;
+	margin-right:auto;
+}
+.header{
+	height:45px;
+	font-family:'Cherry Cream Soda';
+	text-align:center;
+	font-size:30px;
+}
+.evenheader{
+	color:#de4e2a;
+}
+.oddheader{
+	color:#1e9ddc;
+}
+div#tictactoe{
+}
+div#winner{
+	height:80px;
+	text-align:center;
+	font-family:'Permanent Marker';
+	font-size:50px;
+	color:#1e9ddc;
+	position:relative;
+
+}
+table#ttt{
+	border-collapse:collapse;
+	text-align:center;
+	font-family:'Permanent Marker';
+	color:#1e9ddc;
+	font-size:50px;
+	position:relative;
+	margin-left:auto;
+	margin-right:auto;
+	background-color:transparent;
+}
+tr#ttttop, #tttmiddle{
+	border-bottom-style:solid;
+	border-bottom-width:5px;
+	border-bottom-color:#de4e2a;
+}
+.tttleft, .tttcenter{
+	border-right-style:solid;
+	border-right-width:5px;
+	border-right-color:#de4e2a;
+}
+td{
+	width:75px;
+	height:75px;
+}
+img#kavalier{
+	display:block;
+	margin-left:auto;
+	margin-right:auto;
+	height:100%;
+}
+button#reset{
+	font-family:'Cherry Cream Soda';
+	color:#de4e2a;
+	font-size:12px;
+	line-height:20px;
+	background-color:white;
+	border-width:0px;
+	height:30px;
+	width:100px;
+	position:absolute;
+	right:25px;
+	bottom:25px;
+
+}
+#reset:focus{
+	outline:none;
+}
