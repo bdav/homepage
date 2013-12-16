@@ -77,7 +77,6 @@ div#blogcontainer{
 	position:relative;
 	margin-left:auto;
 	margin-right:auto;
-	overflow:scroll;
 }
 .evencontent{
 	border-color:#de4e2a;
