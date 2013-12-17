@@ -79,7 +79,7 @@ function checkDiag2() {
 function checkCatsGame() {
 	for (var i=0;i<$(".game").length;i++) { 
 		if ($(".game")[i].innerText !="") {
-			if (i==8) {
+			if (i==8 && $("#winner").html() =="") {
 				$("#winner").html("Cat's game!");
 			}
 		} else {
