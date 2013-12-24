@@ -91,4 +91,5 @@ $("button#reset").click(function() {
 	$(".game").html('');
 	$( this ).html('');
 	$("#winner").html('');
+	counter=1;
 });

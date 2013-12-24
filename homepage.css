@@ -1,3 +1,6 @@
+body{
+	position:relative;
+}
 div#container1{
 	padding:7px;
 	border-style:solid;
@@ -65,9 +68,6 @@ div#Beau{
 .oddcontainer{
 		border-color:#de4e2a;
 }
-div#blogcontainer{
-	width:850px;
-}
 .content{
 	padding:5px;
 	border-style:solid;
@@ -83,9 +83,6 @@ div#blogcontainer{
 }
 .oddcontent{
 	border-color:#1e9ddc;
-}
-div#thablog{
-	width:838px;
 }
 .pic{
 	display:block;
