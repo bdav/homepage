@@ -6,7 +6,8 @@
 	<link rel='stylesheet' href='homepage.css'>
 	<link rel='stylesheet' type='text/css' href='http://fonts.googleapis.com/css?family=Permanent+Marker'>
 	<link rel='stylesheet' type='text/css' href='http://fonts.googleapis.com/css?family=Cherry+Cream+Soda'>
-	<script src="../tictactoe/jquery-2.0.3.js"></script>
+	<link href='https://fonts.googleapis.com/css?family=Work+Sans:300' rel='stylesheet' type='text/css'>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 </head>
 <body>	
 		<div id='container1'>
@@ -59,7 +60,7 @@
 				<div id='diag2win'>
 				</div>
 				<button id='reset' type='button'></button>
-				<script src="ttt2.js"></script>		
+						
 			</div>
 		</div>
 		<div id='bookcontainer' class='container oddcontainer'>
@@ -67,20 +68,107 @@
 				I'm reading this book.
 			</div>
 			<div id='book' class='content oddcontent'>
-				<a href='http://www.goodreads.com/book/show/3985.The_Amazing_Adventures_of_Kavalier_Clay' target='_blank'>	
-					<img src='kavalier.png' alt='The Amazing Adventures of Kavalier and Clay' id='kavalier'>
+				<a href='http://www.goodreads.com/book/show/18468568-the-story-of-a-new-name' target='_blank'>	
+					<img src='current-book.jpg' alt='The Story of a New Name' id='current-book'>
 				</a>
 			</div>
 		</div>
-		<div id='piccontainer' class='container evencontainer'>
-			<div id='pichead' class='header evenheader'>
-				I also took this picture.
+		<div id='mine-container' class='container evencontainer'>
+			<div id='mine-head' class='header evenheader'>
+				I made a minesweeper.
 			</div>
-			<div id='rosespic' class='content evencontent'>
-				<a href="http://instagram.com/p/h9OtLzo163/" target='_blank' class='pic'>
-					<img id='roses' src='roses.png' alt='such amaze' height='400px'>
-				</a>
+			<div id='minesweeper' class='content evencontent'>
+				<div id='mine-alert'></div>
+				<div class='mine-button-container'>
+					<button class="mine-button" id='newGame' type='button'>New Game</button>
+					<button class="mine-button" id='validate' type='button'>Validate</button>
+					<button class="mine-button" id='showMines' type='button'>Show Mines</button>
+				</div>
+				<table id='gameBoardTable'>
+					<tr>
+						<td class='mine-cell'></td>
+						<td class='mine-cell'></td>
+						<td class='mine-cell'></td>
+						<td class='mine-cell'></td>
+						<td class='mine-cell'></td>
+						<td class='mine-cell'></td>
+						<td class='mine-cell'></td>
+						<td class='mine-cell'></td>
+					</tr>
+					<tr>
+						<td class='mine-cell'></td>
+						<td class='mine-cell'></td>
+						<td class='mine-cell'></td>
+						<td class='mine-cell'></td>
+						<td class='mine-cell'></td>
+						<td class='mine-cell'></td>
+						<td class='mine-cell'></td>
+						<td class='mine-cell'></td>
+					</tr>
+					<tr>
+						<td class='mine-cell'></td>
+						<td class='mine-cell'></td>
+						<td class='mine-cell'></td>
+						<td class='mine-cell'></td>
+						<td class='mine-cell'></td>
+						<td class='mine-cell'></td>
+						<td class='mine-cell'></td>
+						<td class='mine-cell'></td>
+					</tr>
+					<tr>
+						<td class='mine-cell'></td>
+						<td class='mine-cell'></td>
+						<td class='mine-cell'></td>
+						<td class='mine-cell'></td>
+						<td class='mine-cell'></td>
+						<td class='mine-cell'></td>
+						<td class='mine-cell'></td>
+						<td class='mine-cell'></td>
+					</tr>
+					<tr>
+						<td class='mine-cell'></td>
+						<td class='mine-cell'></td>
+						<td class='mine-cell'></td>
+						<td class='mine-cell'></td>
+						<td class='mine-cell'></td>
+						<td class='mine-cell'></td>
+						<td class='mine-cell'></td>
+						<td class='mine-cell'></td>
+					</tr>
+					<tr>
+						<td class='mine-cell'></td>
+						<td class='mine-cell'></td>
+						<td class='mine-cell'></td>
+						<td class='mine-cell'></td>
+						<td class='mine-cell'></td>
+						<td class='mine-cell'></td>
+						<td class='mine-cell'></td>
+						<td class='mine-cell'></td>
+					</tr>
+					<tr>
+						<td class='mine-cell'></td>
+						<td class='mine-cell'></td>
+						<td class='mine-cell'></td>
+						<td class='mine-cell'></td>
+						<td class='mine-cell'></td>
+						<td class='mine-cell'></td>
+						<td class='mine-cell'></td>
+						<td class='mine-cell'></td>
+					</tr>
+					<tr>
+						<td class='mine-cell'></td>
+						<td class='mine-cell'></td>
+						<td class='mine-cell'></td>
+						<td class='mine-cell'></td>
+						<td class='mine-cell'></td>
+						<td class='mine-cell'></td>
+						<td class='mine-cell'></td>
+						<td class='mine-cell'></td>
+					</tr>
+				</table>
+				<div id='flagged'>Flagged:</div>
 			</div>
+
 		</div>
 		<div id='map' class='container oddcontainer'>
 			<div id='mapheader' class='header oddheader'>
@@ -92,4 +180,6 @@
 				</a>
 			</div>
 		</div>	
+		<script src="ttt2.js"></script>
+		<script src="minesweeper.js"></script>		
 </body>

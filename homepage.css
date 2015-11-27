@@ -137,11 +137,38 @@ tr#ttttop, #tttmiddle{
 	border-right-width:5px;
 	border-right-color:#de4e2a;
 }
-td{
+.game{
 	width:75px;
 	height:75px;
 }
-img#kavalier{
+div#mine-alert{
+	height:80px;
+	text-align:center;
+	font-family:'Permanent Marker';
+	font-size:50px;
+	color:#1e9ddc;
+	position:relative;
+
+}
+#gameBoardTable {
+	position: relative;
+	margin-left: auto;
+	margin-right: auto;
+}
+.mine-cell{
+	font-family:'Work Sans';
+	color:#de4e2a;
+	width:25px;
+	height:25px;
+	border-style:solid;
+	border-width:1px;
+	user-select: none;
+	-webkit-user-select: none;
+	text-align:center;
+	cursor:default;
+	border-color: #de4e2a;
+}
+img#current-book{
 	display:block;
 	margin-left:auto;
 	margin-right:auto;
@@ -163,6 +190,29 @@ button#reset{
 }
 #reset:focus{
 	outline:none;
+}
+
+.mine-button{
+	font-family:'Work Sans';
+	color:#de4e2a;
+	font-size:16px;
+	line-height:20px;
+	background-color:white;
+	border-width:0px;
+	height:30px;
+	width:110px;
+}
+.mine-button-container {
+	text-align: center;
+}
+#flagged {
+	font-family:'Work Sans';
+	color:#de4e2a;
+	font-size:16px;
+	line-height:20px;
+	position:absolute;
+	right:50px;
+	bottom:20px;
 }
 div#videocontainer{
 	position:relative;
