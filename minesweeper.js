@@ -165,7 +165,8 @@ $('button#validate').click(function checkBoard(){
 		for (var y=0;y<8;y++){
 			for (var x=0;x<8;x++){
 				if (gameBoard[y][x].flagged == true && gameBoard[y][x].isMine == false){
-					$($('.mine-cell')[(y*8)+x]).css("color", "#1e9ddc");
+					$($('.mine-cell')[(y*8)+x]).css("color", "white");
+					$($('.mine-cell')[(y*8)+x]).css("background-color","#1e9ddc");
 					wrongFlags++;
 				}
 				if (gameBoard[y][x].isMine == true && gameBoard[y][x].flagged == false ){
