@@ -144,10 +144,10 @@ function leftClick(x,y){
 			else if (gameBoard[y][x].isMine == true){
 				for (var k=0;k<8;k++){
 					for (var l=0;l<8;l++){
-						if (gameBoard[k][l].isMine == true){
+						if (gameBoard[k][l].isMine == true && gameBoard[k][l].flagged == false){
 							$($('.mine-cell')[(k*8)+l]).html('X');
-							$($('.mine-cell')[(y*8)+x]).css("background-color","#1e9ddc");
-							$($('.mine-cell')[(y*8)+x]).css("color","white");
+							$($('.mine-cell')[(k*8)+l]).css("background-color","#1e9ddc");
+							$($('.mine-cell')[(k*8)+l]).css("color","white");
 
 						}
 					}
